@@ -1,11 +1,11 @@
-import Contact from "../models/contact.js";
+import Contact from "../models/contact.model.js";
 
 import { HttpError } from "../helpers/index.js";
 
 import {
   contactsAddSchema,
   contactUpdateFavoriteSchema,
-} from "../schemas/contacts-schemas.js";
+} from "../schemas/contacts.schemas.js";
 
 const getAll = async (req, res, next) => {
   try {
